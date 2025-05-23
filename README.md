@@ -10,13 +10,13 @@ Proyek ini menggunakan *dataset* sintetis berisi data harga beras dan indeks bul
 Berikut ilustrasi alur kerjanya:
 
 ```mermaid
-%%{init: {'flowchart': {'curve': 'linear'}}}%%
+%%{init: {'flowchart': {'curve': 'linear'}}%%
 graph LR
-    A["Dataset Sintetis<br>(inspirasi BPS)"] --> B["Latih Model Regresi Linear"];
-    B --> C["Model Terlatih"];
-    D["Input Pengguna<br>(Indeks Bulan 1-12)"] --> E["Skrip Prediksi<br>(rice_price_predictor.py)"];
-    C --> E; %% Model digunakan oleh Skrip
-    E --> F["Harga Prediksi<br>(Rp/kg)"];
+A["Dataset Sintetis<br>(inspirasi BPS)"] -->|Masuk ke| B["Latih Model Regresi Linear"]
+B -->|Menghasilkan| C["Model Terlatih"]
+D["Input Pengguna<br>(Indeks Bulan 1-12)"] -->|Diproses oleh| E["Skrip Prediksi<br>(rice_price_predictor.py)"]
+C -->|Digunakan oleh| E
+E -->|Menghasilkan| F["Harga Prediksi<br>(Rp/kg)"]
 ```
 
 ## Fitur
