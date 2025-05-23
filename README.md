@@ -47,34 +47,23 @@ pip install scikit-learn pandas numpy
 
 1.  Kloning repositori ini:
     ```bash
-    git clone https://github.com/your-username/rice-price-predictor.git
+    git clone https://github.com/Faturrachman-dev/prediksi-harga-beras
     ```
 2.  Masuk ke direktori proyek:
     ```bash
-    cd rice-price-predictor
+    cd prediksi-harga-beras
     ```
 3.  Pastikan dependensi sudah terinstal (lihat Persyaratan).
 
 ## Penggunaan (Usage)
 
-### Opsi 1: Jalankan di Jupyter Notebook
+### Jalankan sebagai Skrip CLI (Command-Line Interface)
 
-1.  Luncurkan Jupyter Notebook:
-    ```bash
-    jupyter notebook
-    ```
-2.  Buka `rice_price_predictor.ipynb` (jika sudah dikonversi ke format notebook).
-3.  Jalankan semua sel.
-4.  Masukkan indeks bulan (misalnya, 6) untuk mendapatkan prediksi harga beras.
-
-### Opsi 2: Jalankan sebagai Skrip CLI (Command-Line Interface)
-
-1.  Simpan kode sebagai `rice_price_predictor.py`.
-2.  Jalankan skrip:
+1.  Jalankan skrip:
     ```bash
     python rice_price_predictor.py
     ```
-3.  Masukkan indeks bulan (1–12) saat diminta (misalnya, 6) untuk melihat harga prediksi. Ketik `keluar` untuk keluar.
+2.  Masukkan indeks bulan (1–12) saat diminta (misalnya, 6) untuk melihat harga prediksi. Ketik `keluar` untuk keluar.
 
 ## Contoh Output (Example Output)
 ```
