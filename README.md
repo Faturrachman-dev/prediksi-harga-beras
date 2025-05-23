@@ -1,7 +1,8 @@
 # Prediksi Harga Beras (Rice Price Predictor)
 
 ## Ikhtisar
-Prediksi Harga Beras (Rice Price Predictor) adalah aplikasi *machine learning* sederhana yang dikembangkan selama program *coding-camp* ML Engineer saya. Aplikasi ini menggunakan model regresi linear untuk memprediksi harga beras (dalam Rp/kg) berdasarkan indeks waktu (misalnya, bulan). Beras adalah makanan pokok di Indonesia, dan memprediksi harganya adalah masalah yang relevan untuk memahami tren pasar. Proyek ini menunjukkan kemampuan saya dalam persiapan data, pelatihan model, dan pembuatan aplikasi ML yang ramah pengguna, selagi saya terus belajar membangun perangkat lunak yang lebih canggih.
+Prediksi Harga Beras (Rice Price Predictor) adalah aplikasi *machine learning* sederhana yang dikembangkan selama program *coding-camp* ML Engineer saya. Aplikasi ini menggunakan model regresi linear untuk memprediksi harga beras (dalam Rp/kg) berdasarkan indeks waktu (misalnya, bulan). 
+Beras adalah makanan pokok di Indonesia, dan memprediksi harganya adalah masalah yang relevan untuk memahami tren pasar. Proyek ini menunjukkan kemampuan saya dalam persiapan data, pelatihan model, dan pembuatan aplikasi ML yang ramah pengguna, selagi saya terus belajar membangun perangkat lunak yang lebih canggih.
 
 ## Cara Kerja (How It Works)
 
