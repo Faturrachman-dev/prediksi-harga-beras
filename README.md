@@ -1,19 +1,35 @@
 # Prediksi Harga Beras (Rice Price Predictor)
 
-## Ikhtisar (Overview)
+## Ikhtisar
 Prediksi Harga Beras (Rice Price Predictor) adalah aplikasi *machine learning* sederhana yang dikembangkan selama program *coding-camp* ML Engineer saya. Aplikasi ini menggunakan model regresi linear untuk memprediksi harga beras (dalam Rp/kg) berdasarkan indeks waktu (misalnya, bulan). Beras adalah makanan pokok di Indonesia, dan memprediksi harganya adalah masalah yang relevan untuk memahami tren pasar. Proyek ini menunjukkan kemampuan saya dalam persiapan data, pelatihan model, dan pembuatan aplikasi ML yang ramah pengguna, selagi saya terus belajar membangun perangkat lunak yang lebih canggih.
 
-## Fitur (Features)
+## Cara Kerja (How It Works)
+
+Proyek ini menggunakan *dataset* sintetis berisi data harga beras dan indeks bulan. Model regresi linear dilatih untuk memprediksi harga berdasarkan indeks bulan. Pengguna memasukkan indeks bulan (1–12), dan model menghasilkan harga prediksi. Penanganan *error* memastikan input yang valid (misalnya, angka antara 1 dan 12).
+
+Berikut ilustrasi alur kerjanya:
+
+```mermaid
+%%{init: {'flowchart': {'curve': 'linear'}}}%%
+graph LR
+    A["Dataset Sintetis<br>(inspirasi BPS)"] --> B["Latih Model Regresi Linear"];
+    B --> C["Model Terlatih"];
+    D["Input Pengguna<br>(Indeks Bulan 1-12)"] --> E["Skrip Prediksi<br>(rice_price_predictor.py)"];
+    C --> E; %% Model digunakan oleh Skrip
+    E --> F["Harga Prediksi<br>(Rp/kg)"];
+```
+
+## Fitur
 
 *   Memprediksi harga beras menggunakan model regresi linear.
 *   Menerima input pengguna berupa indeks bulan (1–12) melalui antarmuka baris perintah (*command-line interface*) atau Jupyter Notebook.
 *   Menggunakan *dataset* sintetis yang meniru tren harga beras di Indonesia (berdasarkan data BPS).
 *   Dibangun dengan Python dan scikit-learn, memastikan kesederhanaan dan kemudahan penggunaan.
 
-## Relevansi untuk Indonesia (Relevance to Indonesia)
+## Relevansi untuk Indonesia
 Beras adalah komoditas penting di Indonesia, dengan harga yang sering berfluktuasi akibat faktor-faktor seperti cuaca, hama, atau masalah pasokan. Proyek ini menunjukkan pendekatan dasar untuk memprediksi harga beras, yang dapat mendukung pengambilan keputusan bagi petani, konsumen, atau pembuat kebijakan. *Dataset* sintetis ini terinspirasi dari data nyata dari Badan Pusat Statistik (BPS) Indonesia, memastikan relevansi budaya dan ekonomi.
 
-## Persyaratan (Requirements)
+## Persyaratan
 Untuk menjalankan proyek ini, Anda memerlukan:
 
 *   Python 3.6+
@@ -26,7 +42,7 @@ Instal dependensi:
 pip install scikit-learn pandas numpy
 ```
 
-## Instalasi (Installation)
+## Instalasi
 
 1.  Kloning repositori ini:
     ```bash
@@ -75,13 +91,6 @@ Proyek ini menggunakan *dataset* sintetis dengan harga beras yang realistis (Rp 
 
 *   `script-prediksi`: Skrip Python utama dengan model regresi linear dan antarmuka CLI interaktif.
 *   `README.md`: File ini, yang menjelaskan proyek.
-
-## Cara Kerja (How It Works)
-
-*   Aplikasi ini menggunakan *dataset* sintetis berisi data harga beras dan indeks bulan.
-*   Model regresi linear dilatih untuk memprediksi harga berdasarkan indeks bulan.
-*   Pengguna memasukkan indeks bulan (1–12), dan model menghasilkan harga prediksi.
-*   Penanganan *error* memastikan input yang valid (misalnya, angka antara 1 dan 12).
 
 ## Konteks Pembelajaran (Learning Context)
 Proyek ini dikembangkan selama program *coding-camp* ML Engineer saya untuk mempraktikkan keterampilan dasar *machine learning*, termasuk *data preprocessing*, pelatihan model, dan membangun aplikasi interaktif. Sebagai aplikasi sederhana yang disesuaikan dengan konteks Indonesia, proyek ini mencerminkan peningkatan keterampilan saya selagi saya berusaha mengembangkan perangkat lunak ML yang lebih kompleks, seperti aplikasi berbasis web atau sistem dengan *dataset* yang lebih besar.
